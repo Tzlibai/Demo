@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Translate</title>
+</head>
+<body>
+    <p>你好 世界！</p>
+    <!--谷歌翻译 -->
+    <!--    如需隐藏/更改一些样式，可使用css操作-->
+    <div id="google_translate_element"></div>
+</body>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      // includedLanguages: 'de,en,es,fr,it', 需要下拉翻译支持哪些语言，默认全部
+      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+    }, 'google_translate_element');
+  }
+</script>
+</html>
